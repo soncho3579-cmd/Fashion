@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FashionHub</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="#">
+                FashionHub
+            </a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Trang chủ</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sản phẩm</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Liên hệ</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <div class="banner">
+
+        <div class="container text-center">
+
+            <h1>FashionHub</h1>
+
+            <p>
+                Thời trang hiện đại dành cho mọi người
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- Danh sách sản phẩm -->
+    <div class="container mt-5">
+
+        <h2 class="text-center mb-4">
+            Sản phẩm nổi bật
+        </h2>
+        <div class="container my-5">
+    <!-- tìm kiếm -->
+    <div class="row mb-4">
+        <div class="col-md-6">
+            <input
+                type="text"
+                id="search"
+                class="form-control"
+                placeholder="Nhập tên sản phẩm..."
+            >
+        </div>
+
+        <div class="col-md-3">
+            <select id="category" class="form-select">
+                <option value="all">Tất cả</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- PHẢI CÓ DÒNG NÀY -->
+    <div class="row" id="product-list"></div>
+    </div>
+</div>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-4 mt-5">
+
+        © 2026 FashionHub
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
